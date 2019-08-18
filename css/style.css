@@ -88,7 +88,7 @@ header,
     max-height: 50%;
     max-width: 100%;
   }
-  .projeto-responsivo{ transform: translate(0%,-100%);
+  .projeto-responsivo{ transform: translate(0%,-120%);
   }
 }
 @media (min-width: 321px) and (max-width: 375.99px) {
@@ -113,7 +113,7 @@ header,
     max-width: 100%;
   }
   .projeto-responsivo{ 
-    transform: translate(0%,-100%);
+    transform: translate(0%,-120%);
   }
   p{
     font-size: 1.3rem;
@@ -137,7 +137,7 @@ header,
     max-width: 100%;
   }
   .projeto-responsivo{ 
-    transform: translate(0%,-100%);
+    transform: translate(0%,-120%);
   }
   p{
     font-size: 1.3rem;
