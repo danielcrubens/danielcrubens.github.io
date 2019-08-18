@@ -1,3 +1,7 @@
+
+
+/*testets */
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap);
 body {
   overflow-x: hidden
@@ -82,14 +86,13 @@ header,
     
   }
   .card-responsivo{
-    max-height: 50rem;
+    max-height: auto;
   }
   .foto-card-responsivo{
     max-height: 50%;
     max-width: 100%;
   }
-  .projeto-responsivo{ transform: translate(0%,-120%);
-  }
+ 
 }
 @media (min-width: 321px) and (max-width: 375.99px) {
   html {
@@ -106,18 +109,17 @@ header,
     
   }
   .card-responsivo{
-    max-height: 50rem;
+    max-height: auto;
   }
   .foto-card-responsivo{
     max-height: 50%;
     max-width: 100%;
   }
-  .projeto-responsivo{ 
-    transform: translate(0%,-120%);
-  }
+ 
   p{
     font-size: 1.3rem;
   }
+  
 }
 @media (min-width: 376px) and (max-width: 425.99px) {
   html {
@@ -136,14 +138,15 @@ header,
     max-height: 50%;
     max-width: 100%;
   }
-  .projeto-responsivo{ 
-    transform: translate(0%,-120%);
-  }
+
   p{
     font-size: 1.3rem;
   }
   li{
     font-size: 1.6rem;
+  }
+   .card-responsivo{
+    max-height: auto;
   }
 }
 @media (max-width: 740px) {
