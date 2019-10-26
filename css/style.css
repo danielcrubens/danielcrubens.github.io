@@ -15,8 +15,8 @@ background: rgba(10, 10, 10, 0.55)!important
 background: transparent!important
 }
 .hr-light {
-border-top: 3px solid #fff;
-width: 80px
+border-top: 3px solid #26a796;
+width: 180px;
 }
 .sec1 {
 width: 100%;
@@ -61,6 +61,24 @@ transform: skewY(-8deg)
 .sec3 {
 background-color: white
 }
+#whats :hover{
+    color: #25d366;}   
+    #link :hover{
+    color: #007fb1;
+    }    
+    #git :hover{
+    color: #0a0a0a;
+    }
+    #whats, #link, #git{
+    color:#C44F6A!important;
+    }
+    .h2-responsive{
+    font-size: 28pt;
+    
+    }
+    .typewrite{
+        color: #16C5CF;
+    }
 @media (max-width: 320px) {
 li{
 font-size: 1.6rem;
@@ -148,15 +166,4 @@ height: 100vh
 .navbar:not(.top-nav-collapse) {
 background: rgba(10, 10, 10, 0.55)!important
 }
-}
-#whats :hover{
-color: #25d366;}   
-#link :hover{
-color: #007fb1;
-}    
-#git :hover{
-color: #0a0a0a;
-}
-#whats, #link, #git{
-color:#C44F6A!important;
 }
