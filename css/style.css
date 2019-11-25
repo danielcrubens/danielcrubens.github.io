@@ -102,6 +102,12 @@ max-height: auto;
 max-height: 50%;
 max-width: 100%;
 }
+.imagem-responsiva{
+height: 100%;
+}
+.h2-responsive {
+font-size: 22pt;
+}
 }
 @media (min-width: 321px) and (max-width: 375.99px) {
 html {
@@ -129,6 +135,9 @@ font-size: 1.3rem;
 .projeto-responsivo{
 transform:translate(0%,-95%);
 }
+.imagem-responsiva{
+    height: 100%;
+}
 }
 @media (min-width: 376px) and (max-width: 425.99px) {
 html {
@@ -152,6 +161,9 @@ font-size: 1.3rem;
 }
 li{
 font-size: 1.6rem;
+}
+.imagem-responsiva{
+height: 100%;
 }
 }
 @media (max-width: 740px) {
