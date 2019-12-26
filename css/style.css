@@ -39,7 +39,7 @@ header,
 
 .sec1 {
   width: 100%;
-  height: 690px;
+  height: 590px;
   background-color: white
 }
 
@@ -86,7 +86,13 @@ header,
 .sec3 {
   background-color: white
 }
-
+.btn-outline-link:hover{
+  background: #c95e77;
+  color:#ffff !important;
+  transition: 1s;
+  transition: transform enter-delay cubic-bezier(0.4, 0.1, 0.7, 0.95);
+    
+}
 #whats :hover {
   color: #25d366;
 }
@@ -138,6 +144,9 @@ header,
   .h2-responsive {
     font-size: 22pt;
   }
+  .sec1 {
+    height: 910px;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 375.99px) {
@@ -169,17 +178,20 @@ header,
   .imagem-responsiva {
     height: 100%;
   }
+  .sec1 {
+    height: 994px;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 425.99px) {
   html {
-    font-size: .7rem
+    font-size: .7rem;
   }
   .texto-responsivo {
-    font-size: 4.3rem
+    font-size: 4.3rem;
   }
   .sec1 {
-    height: 790px
+    height: 1099px;
   }
   .card-responsivo {
     max-height: auto;
