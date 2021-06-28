@@ -566,7 +566,7 @@ img.opacity {
 }
 
 @media (max-width: 575px) {
-  body {
+  * {
     background: blue;
     overflow-y: hidden!important;
   }
