@@ -568,7 +568,7 @@ img.opacity {
 @media (max-width: 575px) {
   body {
     background: blue;
-    overflow-y: hidden;
+    overflow-y: hidden!important;
   }
   .timeline .swiper-slide-content {
     position: absolute;
