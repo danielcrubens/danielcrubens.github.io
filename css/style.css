@@ -565,13 +565,17 @@ img.opacity {
   opacity: 0.8;
 
 }
-
+ul{
+  height: 100vh;
+  border: 1px solid gray;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  }
 @media (max-width: 575px) {
-  body, main,html {
-     background: #131819;
-     -webkit-overflow: hidden;
-     overflow: hidden;
-     -webkit-transform: translate3d(0,0,0);
+  body {
+     background:blue;
+     overflow: auto;
+     -webkit-overflow-scrolling: touch;
 
    }
   .timeline .swiper-slide-content {
