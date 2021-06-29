@@ -567,8 +567,8 @@ img.opacity {
 
 @media (max-width: 575px) {
   body {
-    background-color: #007fb1;
-    height: 95vh;
+    background-color: #007fb1!important;
+    height: 100vh;
     overflow: hidden!important;
   }
   .timeline .swiper-slide-content {
