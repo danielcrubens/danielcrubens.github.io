@@ -569,7 +569,7 @@ img.opacity {
 @media (max-width: 575px) {
   body {
      background:blue;
-     overflow: auto;
+     overflow: hidden;
      -webkit-overflow-scrolling: touch;
 
    }
