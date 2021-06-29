@@ -567,21 +567,8 @@ img.opacity {
 }
 
 @media (max-width: 575px) {
-  #wrapper{
-    height: 100%!important;
-    width: 100%!important;
-    position: fixed!important;
-    -webkit-overflow: hidden!important;
-  }
-  body {
-     background:blue;
-     overflow: hidden;
-     -webkit-overflow-scrolling: touch;
+  
 
-   }
-   #dcr{
-     height: 100vh;
-   }
   .timeline .swiper-slide-content {
     position: absolute;
     text-align: center;
