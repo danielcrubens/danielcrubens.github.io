@@ -568,10 +568,11 @@ img.opacity {
 
 @media (max-width: 575px) {
   body, main,html {
-    /*  min-height: 300vh; */
      background: #131819;
-     -webkit-overflow: hidden!important;
+     -webkit-overflow: hidden;
      overflow: hidden;
+     -webkit-transform: translate3d(0,0,0);
+
    }
   .timeline .swiper-slide-content {
     position: absolute;
