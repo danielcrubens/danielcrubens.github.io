@@ -565,18 +565,16 @@ img.opacity {
   opacity: 0.8;
 
 }
-ul{
-  height: 100vh;
-  border: 1px solid gray;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  }
+
 @media (max-width: 575px) {
   body {
      background:blue;
      overflow: auto;
      -webkit-overflow-scrolling: touch;
 
+   }
+   #dcr{
+     height: 100vh;
    }
   .timeline .swiper-slide-content {
     position: absolute;
