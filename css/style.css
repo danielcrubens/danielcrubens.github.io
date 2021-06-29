@@ -567,7 +567,6 @@ img.opacity {
 
 @media (max-width: 575px) {
   body {
-    background-color: #007fb1!important;
     height: 100vh;
     overflow: hidden!important;
   }
@@ -589,6 +588,11 @@ img.opacity {
 .timeline {
   width: 90vw;
   margin-top: 3rem;
+}
+.timeline .swiper-container {
+  height: 60vh;
+  width: 100%;
+  position: relative;
 }
 
 }
