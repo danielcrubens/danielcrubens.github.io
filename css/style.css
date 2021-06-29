@@ -22,13 +22,11 @@
 a{
   color: white!important;
 }
-html,body {
+body, main,html {
  /*  min-height: 300vh; */
   background: #131819;
-  -webkit-overflow: hidden;
-  position: fixed;
-    height: 100%;
-
+  -webkit-overflow: hidden!important;
+  overflow: hidden;
 }
 p{
   font-size: 17px;
@@ -569,10 +567,12 @@ img.opacity {
 }
 
 @media (max-width: 575px) {
-  body {
-    height: 100vh;
-   -webkit-overflow: hidden!important;
-  }
+  body, main,html {
+    /*  min-height: 300vh; */
+     background: #131819;
+     -webkit-overflow: hidden!important;
+     overflow: hidden;
+   }
   .timeline .swiper-slide-content {
     position: absolute;
     text-align: center;
