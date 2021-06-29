@@ -567,6 +567,12 @@ img.opacity {
 }
 
 @media (max-width: 575px) {
+  #wrapper{
+    height: 100%!important;
+    width: 100%!important;
+    position: fixed!important;
+    overflow: hidden!important;
+  }
   body {
      background:blue;
      overflow: hidden;
