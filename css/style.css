@@ -571,7 +571,7 @@ img.opacity {
     height: 100%!important;
     width: 100%!important;
     position: fixed!important;
-    overflow: hidden!important;
+    -webkit-overflow: hidden!important;
   }
   body {
      background:blue;
