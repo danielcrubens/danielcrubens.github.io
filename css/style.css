@@ -22,10 +22,13 @@
 a{
   color: white!important;
 }
-body {
+html,body {
  /*  min-height: 300vh; */
   background: #131819;
-  overflow-y: hidden;
+  -webkit-overflow: hidden;
+  position: fixed;
+    height: 100%;
+
 }
 p{
   font-size: 17px;
