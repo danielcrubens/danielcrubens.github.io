@@ -568,26 +568,11 @@ img.opacity {
 
 @media (max-width: 575px) {
   
-  .hide-scrollbar {
-    /*FireFox*/
-    scrollbar-width: none;
-    /*IE10+*/
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-  }
-  .hide-scrollbar::-webkit-scrollbar {
-    /*Chrome, Safari, Edge*/
-    display: none;
-  }
-
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none;
+body{
+  -webkit-overflow-scrolling: auto!important;
 }
 
-/* Hide scrollbar for IE, Edge add Firefox */
-.scrollbar-hidden {
-  -ms-overflow-style: none;
-  scrollbar-width: none; /* Firefox */
-}
+
 
   .timeline .swiper-slide-content {
     position: absolute;
