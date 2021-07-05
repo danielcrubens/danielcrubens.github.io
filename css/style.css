@@ -568,6 +568,16 @@ img.opacity {
 
 @media (max-width: 575px) {
   
+  .hide-scrollbar {
+    /*FireFox*/
+    scrollbar-width: none;
+    /*IE10+*/
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    /*Chrome, Safari, Edge*/
+    display: none;
+  }
 
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
