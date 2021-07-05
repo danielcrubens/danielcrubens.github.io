@@ -1,3 +1,7 @@
+document.body.addEventListener('touchmove',function(e){
+  e.preventDefault();
+});
+ 
  // function to open/close nav
  function toggleNav() {
     // if nav is open, close it
