@@ -569,6 +569,16 @@ img.opacity {
 @media (max-width: 575px) {
   
 
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
   .timeline .swiper-slide-content {
     position: absolute;
     text-align: center;
