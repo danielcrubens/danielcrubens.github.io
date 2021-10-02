@@ -8,7 +8,7 @@ Meus projetos desenvolvidos durante a minha carreira como desenvolvedor front-en
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Html5](https://html.spec.whatwg.org/)
 - [Css3](https://www.w3schools.com/Css/)
-- [JavaScript](https://www.w3.org/standards/webdesign/script)
+- [Jquery](https://jquery.com/)
 
 ## 📝 License
 
