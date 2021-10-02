@@ -547,11 +547,7 @@ h1 {
 
 /* RESPONSVIDADE */
 @media (max-width: 768px) {
-  body,
-  main,
-  section {
-    background: red;
-  }
+ 
   header {
     top: -24px;
   }
@@ -626,11 +622,7 @@ h1 {
 }
 
 @media (max-width: 575px) {
-  body,
-  main,
-  section {
-    background: blue;
-  }
+
   header {
     top: -24px;
   }
@@ -639,6 +631,6 @@ h1 {
     width: 100%;
   }
   #skills img {
-    width: 35%;
+    width: 75%;
   }
 }
