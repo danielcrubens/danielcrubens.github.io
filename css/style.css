@@ -184,7 +184,7 @@ nav ul li:nth-child(4) {
 }
 nav #nav-close {
   position: fixed;
-  top: 2.5rem;
+  top: 2.9rem;
   right: 2.5rem;
   font-size: 1.5rem;
   cursor: pointer;
@@ -293,7 +293,7 @@ h1 {
   margin-right: auto;
   height: auto;
   display: block;
-  width: 45%;
+  width: 33%;
 }
 /* PROJETOS */
 
@@ -420,6 +420,7 @@ h1 {
   text-decoration: none;
   color: #fff;
   margin-left: 1rem;
+  cursor: pointer;
 }
 .btn-swipe {
   position: relative;
