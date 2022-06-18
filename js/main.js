@@ -40,51 +40,45 @@ $(document).ready(function () {
     );
   });
 });
-  //carousel swiper
-  const sliderThumbs = new Swiper(".slider-thumbs .swiper-container", {
-    paginationClickable: true,
-    autoplay: true,
-    speed: 2350,
-    direction: "vertical",
-    slidesPerView: 4,
-    spaceBetween: 24,
-    pagination: {
-      el: ".swiper-pagination",
-    },
 
-    freeMode: true,
-    breakpoints: {
-      0: {
-        direction: "horizontal",
-      },
-      320: {
-        direction: "vertical",
+$(document).ready(function(){
+  $('.carousel').slick({
+    infinite:false,
+    slidesToScroll: 2,
+  slidesToShow: 3,
+  dots:false,
+  autoplay: false,
+   responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        adaptiveHeight: true,
       },
     },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots:false,
+        adaptiveHeight: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots:true,
+        autoplay: true,
+        arrows:false,
+        adaptiveHeight: true,
+        autoplaySpeed: 2700,
+      },
+    },
+  ],
   });
-  const sliderImages = new Swiper(".slider-images .swiper-container", {
-    paginationClickable: true,
-    autoplay: true,
-    speed: 2350,
-    direction: "vertical",
-    slidesPerView: 1,
-    spaceBetween: 32,
-    mousewheel: true,
-    pagination: {
-      el: ".swiper-pagination",
-    },
-
-    grabCursor: true,
-    thumbs: {
-      swiper: sliderThumbs,
-    },
-    breakpoints: {
-      0: {
-        direction: "horizontal",
-      },
-      320: {
-        direction: "vertical",
-      },
-    },
-  });
+});
 
