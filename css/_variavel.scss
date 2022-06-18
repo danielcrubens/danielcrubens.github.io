@@ -52,16 +52,27 @@ $lg:1204px;
 		grid-template-columns: repeat(4, 1fr);
 	}
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none!important;
+  }
+  
+  /* Hide scrollbar for IE, Edge add Firefox */
+  .scrollbar-hidden {
+	-ms-overflow-style: none;
+	scrollbar-width: none; 
+  }
 
 body,
 main {
 	background: $black;
-	--webkit-overflow: hidden;
-	--moz-overflow: hidden;
-	overflow: hidden;
+	--webkit-overflow: hidden!important;
+	--moz-overflow: hidden!important;
+	overflow: hidden!important;
 	font-family: "Inter", sans-serif;
 	font-weight: 500;
 	width: 100%;
+	max-width: 100%;
 }
 p {
 	font-size: 1.063rem;
