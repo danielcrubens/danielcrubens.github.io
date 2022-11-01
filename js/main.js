@@ -44,7 +44,7 @@ $(document).ready(function () {
 $(document).ready(function(){
   $('.carousel').slick({
     infinite:false,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
   slidesToShow: 3,
   dots:false,
   autoplay: false,
