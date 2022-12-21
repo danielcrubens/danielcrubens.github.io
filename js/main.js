@@ -3,9 +3,9 @@ $(document).ready(function () {
   function toggleNav() {
     if ($("nav").is(":visible")) {
       $("nav").fadeOut();
-      $("button").removeClass("menu");
+      $("button").removeClass("menuu");
     } else {
-      $("button").addClass("menu");
+      $("button").addClass("menuu");
       $("nav").fadeIn().css("display", "flex");
     }
   }
@@ -36,7 +36,7 @@ $(document).ready(function () {
       {
         scrollTop: target.offset().top,
       },
-      500
+      200
     );
   });
 });
