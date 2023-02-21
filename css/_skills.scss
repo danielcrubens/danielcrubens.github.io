@@ -1,0 +1,21 @@
+#skills {
+	img {
+		animation: animation 5s ease-in-out infinite;
+		margin-left:auto;
+		margin-right:auto;
+		height:auto;
+		display:block;
+		width:33%;
+		@media (max-width:$sm) {
+			width:75%;
+		}
+	
+		@media (max-width:$xs) {
+			width:75%;
+		}
+		
+	}
+	img.opacity {
+		opacity: 0.8;
+	}
+}

@@ -1,0 +1,87 @@
+.container-fluid {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+@media (max-width: $lg){
+	padding: 0 1.5rem 0;
+}
+}
+.container {
+	max-width: 71.25rem;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row {
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.col-6 {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 1.5rem;
+	@media (max-width: $md) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+.scrollbar-hidden::-webkit-scrollbar {
+	display: none!important;
+  }
+    .scrollbar-hidden {
+	-ms-overflow-style: none;
+	scrollbar-width: none; 
+  }
+
+body,
+main {
+	background: $black;
+	--webkit-overflow: hidden!important;
+	--moz-overflow: hidden!important;
+	overflow: hidden!important;
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	width: 100%;
+	max-width: 100%;
+}
+p {
+	font-size: 1.063rem;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+}
+
+main {
+	section {
+		height: 100vh;
+		overflow: hidden;
+	}
+}
+.grid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+h1 {
+	line-height: 1.6;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: $white;
+	letter-spacing: 1pt;
+	text-align: center;
+	font-size: 250%;
+	@media (max-width: $md) {
+		font-size: 200%;
+	}
+	@media (max-width: $sm) {
+		font-size: 150%;
+	}
+	@media (max-width: $xs) {
+		font-size: 120%;
+	}
+}

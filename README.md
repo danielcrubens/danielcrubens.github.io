@@ -7,8 +7,8 @@ Meus projetos desenvolvidos durante a minha carreira como desenvolvedor front-en
 ## :rocket:  Tecnologias utilizadas
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Html5](https://html.spec.whatwg.org/)
-- [Css3](https://www.w3schools.com/Css/)
-- [Jquery](https://jquery.com/)
+- [SASS](https://sass-lang.com/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ## 📝 License
 

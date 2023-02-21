@@ -1,84 +1,76 @@
-// função abre e fecha buton nav
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", () => {
   function toggleNav() {
-    if ($("nav").is(":visible")) {
-      $("nav").fadeOut();
-      $("button").removeClass("menuu");
+    const nav = document.querySelector("nav");
+    const button = document.querySelector("button");
+    if (nav.style.display === "flex") {
+      nav.style.display = "none";
+      button.classList.remove("menu");
     } else {
-      $("button").addClass("menuu");
-      $("nav").fadeIn().css("display", "flex");
+      nav.style.display = "flex";
+      button.classList.add("menu");
     }
   }
-  // quando clicar  ☰
-  $("button").click(function () {
-    if ($("header").hasClass("open")) {
+
+  document.querySelector("button").addEventListener("click", () => {
+    const header = document.querySelector("header");
+    if (header.classList.contains("open")) {
       toggleNav();
     } else {
-      $("header").addClass("open");
+      header.classList.add("open");
     }
   });
 
-  // fechar nav
-  $("#nav-close").click(function () {
-    toggleNav();
-  });
+  document.querySelector("#nav-close").addEventListener("click", toggleNav);
 
-  // scroll sections
-
-  $("nav li").click(function () {
-    // get index of clicked li and select according section
-    var index = $(this).index();
-    var target = $("main section ").eq(index);
-
-    toggleNav();
-
-    $("html,body").delay(300).animate(
-      {
-        scrollTop: target.offset().top,
-      },
-      200
-    );
+  const navLinks = document.querySelectorAll("nav li");
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", () => {
+      toggleNav();
+      const index = Array.from(navLinks).indexOf(link);
+      const target = document.querySelectorAll("main section")[index];
+      target.scrollIntoView({ behavior: "smooth" });
+    });
   });
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.carousel').slick({
-    infinite:false,
+    infinite: false,
     slidesToScroll: 3,
-  slidesToShow: 3,
-  dots:false,
-  autoplay: false,
-   responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 2,
-        adaptiveHeight: true,
+    slidesToShow: 3,
+    dots: false,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          adaptiveHeight: true,
+        },
       },
-    },
-    {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots:false,
-        adaptiveHeight: true,
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+          adaptiveHeight: true,
+        },
       },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots:true,
-        autoplay: true,
-        arrows:false,
-        adaptiveHeight: true,
-        autoplaySpeed: 2700,
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          autoplay: false,
+          arrows: false,
+          adaptiveHeight: true,
+          autoplaySpeed: 2700,
+        },
       },
-    },
-  ],
+    ],
   });
 });
 
