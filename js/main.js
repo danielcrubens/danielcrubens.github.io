@@ -33,44 +33,33 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-$(document).ready(function () {
-  $('.carousel').slick({
-    infinite: false,
-    slidesToScroll: 3,
-    slidesToShow: 3,
-    dots: false,
-    autoplay: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          adaptiveHeight: true,
-        },
-      },
-      {
-        breakpoint: 769,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          dots: false,
-          adaptiveHeight: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: true,
-          autoplay: false,
-          arrows: false,
-          adaptiveHeight: true,
-          autoplaySpeed: 2700,
-        },
-      },
-    ],
+  const grid = document.querySelector('.portfolio-item');
+  const items = grid.querySelectorAll('.item');
+  const portfolioMenuItems = document.querySelectorAll('.portfolio-menu ul li');
+
+  const isotopeOptions = {
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+  };
+
+  const iso = new Isotope(grid, isotopeOptions);
+  iso.arrange({ filter: '.api' });
+
+  portfolioMenuItems.forEach(function (menuItem) {
+    menuItem.addEventListener('click', function () {
+      portfolioMenuItems.forEach(function (item) {
+        item.classList.remove('active');
+      });
+      this.classList.add('active');
+
+      const selector = this.getAttribute('data-filter');
+      iso.arrange({ filter: selector });
+
+      return false;
+    });
   });
-});
+
+
+
+
 
