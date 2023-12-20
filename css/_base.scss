@@ -7,11 +7,12 @@
 }
 }
 .container {
-	max-width: 71.25rem;
+	max-width: 90%;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
+
 }
 .row {
 	display: flex;
@@ -30,6 +31,9 @@
 	@media (max-width: $md) {
 		grid-template-columns: repeat(4, 1fr);
 	}
+}
+.m-auto{
+  margin: 0 auto;
 }
 .scrollbar-hidden::-webkit-scrollbar {
 	display: none!important;

@@ -2,7 +2,6 @@
 
 Meus projetos desenvolvidos durante a minha carreira como desenvolvedor front-end.
 
-<img  src="./img/frontgif.gif">
 
 ## :rocket:  Tecnologias utilizadas
 Esse projeto foi desenvolvido com as seguintes tecnologias:
