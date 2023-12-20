@@ -2,26 +2,6 @@
 <html lang="pt-br">
 
 <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204378934-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-204378934-2');
-</script>
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PRWFR9L');</script>
-  <!-- End Google Tag Manager -->
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="title" property="og:title" content="Meu Portfólio | Daniel Costa Rubens - Desenvolvedor Front-End">
@@ -31,7 +11,7 @@
     content=" https://raw.githubusercontent.com/danielcrubens/danielcrubens.github.io/master/img/front-end.png" />
   <meta property="og: type" content="Artigo">
   <meta name="keywords"
-    content="HTML,CSS,JavaScript,UX,UI,Google Analytics,Google Search Console,Google Tag Manager,Git">
+    content="HTML,CSS,JavaScript,UX,UI,Google Analytics,Google Search Console,Google Tag Manager,Git,Vue,Nuxt">
   <meta name="author" content="Daniel Costa Rubens">
   <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
   <meta name="google-site-verification" content="o07jyX6o6GQ3iMhQxe5HBC_xV30p8rnDHIAHU0Ubqf8" />
@@ -47,24 +27,31 @@
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRWFR9L" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   <header class="open">
     <button aria-label="abrir Menu"></button>
   </header>
   <nav>
-    <ul class="brackets">
-      <li>Front-end</li>
-      <li> Skills</li>
-      <li>Projetos</li>
-      <li>Contatos</li>
+    <ul class="">
+      <li>
+        Front-end
+        <span class="hover-line"></span>
+      </li>
+      <li>
+        Skills
+        <span class="hover-line"></span>
+      </li>
+      <li>
+        Projetos
+        <span class="hover-line"></span>
+      </li>
+      <li>
+        Contatos
+        <span class="hover-line"></span>
+      </li>
     </ul>
     <div id="nav-close"><i class="fas fa-times branco"></i></div>
   </nav>
   <main class="container-fluid">
-
     <section class="grid">
       <h1 class="h1-responsive">Entusiasta por tecnologias front-end<br>Curioso em ux/ui</h1>
     </section>
@@ -80,9 +67,9 @@
               <img loading="lazy" class="opacity" title="Sass" src="img/sass.svg" alt="SASS">
               <img loading="lazy" class="opacity" title="WordPress" src="img/wordpress.svg" alt="WORDPRESS">
               <img loading="lazy" class="opacity" title="Bootstrap" src="img/bootstrap.svg" alt="BOOTSTRAP">
-              <img loading="lazy" class="opacity" title="Express" src="img/expressjs.svg" alt="EXPRESS">
+              <img loading="lazy" class="opacity" title="Nuxt" src="img/nuxt.svg" alt="NUXT">
               <img loading="lazy" class="opacity" title="Github" src="img/github.svg" alt="GITHUB">
-              <img loading="lazy" class="opacity" title="Gulp" src="img/gulp.svg" alt="GULP">
+              <img loading="lazy" class="opacity" title="Tailwind" src="img/tailwind.svg" alt="TAILWIND">
               <img loading="lazy" class="opacity" title="Npm" src="img/npm.svg" alt="NPM">
               <img loading="lazy" class="opacity" title="Jquery" src="img/jquery.svg" alt="JQUERY">
               <img loading="lazy" class="opacity" title="Git" src="img/git.svg" alt="GIT">
@@ -90,10 +77,9 @@
                 alt="GOOGLE TAG MANAGER">
               <img loading="lazy" class="opacity" title="Google Analytics" src="img/google-analytics.svg"
                 alt="GOOGLE ANALYTICS">
-              <img loading="lazy" class="opacity" title="Google Serach Console" src="img/google-search-console.svg"
+              <img loading="lazy" class="opacity" title="Google Search Console" src="img/google-search-console.svg"
                 alt="GOOGLE SEARCH CONSOLE">
-                <img loading="lazy" class="opacity" title="Vue" src="img/vue.svg"
-                alt="VUE">
+              <img loading="lazy" class="opacity" title="Vue" src="img/vue.svg" alt="VUE">
             </div>
           </div>
         </div>
@@ -102,104 +88,200 @@
 
     <section class="grid">
       <div class="wrapper">
-        <div class="carousel">
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <img loading="lazy" src="img/code.webp" alt="code">
-                <h3>Liga Ágil</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>Site institucional, consultoria de transformação digital que oferece apoio estratégico na condução da
-                  mudança organizacional.
-                </p>
-                <a class="btn-skew" href="https://ligaagil.com.br/" target="_blank">Ver projeto</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <img loading="lazy" src="img/code.webp" alt="code">
-                <h3>Ecoleta</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>Aplicação web destinada a conectar
-                  pessoas com entidades que tratam lixo reciclável de diversas categorias.
-                </p>
-                <a class="btn-skew" href="https://github.com/danielcrubens/ecoleta" target="_blank">Ver projeto</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <img loading="lazy" src="img/code.webp" alt="code">
-                <h3>Cadmus</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p> Site Institucional, soluções em TI. Apoiando na consolidação
-                  da Cultura Digital.
-                </p>
-                <a class="btn-skew" href="https://cadmus.com.br" target="_blank">Ver projeto</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <img loading="lazy" src="img/code.webp" alt="code">
-                <h3>Rocket.q</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p> Aplicação web de interação através de perguntas,
-                  sendo possível criar uma sala para fazer perguntas e o criador da sala gerenciar essas perguntas.
-                </p>
-                <a class="btn-skew" href="https://github.com/danielcrubens/rocket.q" target="_blank">Ver projeto</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <img loading="lazy" src="img/code.webp" alt="code">
-                <h3>Proffy</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>O Proffy é uma plataforma de estudo onde podemos aproximar pessoas que queiram aprender com pessoas
-                  que queiram ensinar.
-                </p>
-                <a class="btn-skew" href="https://github.com/danielcrubens/proffy" target="_blank">Ver projeto</a>
-              </div>
-            </div>
-          </div>
+        <div class="filter-mobile">
+          <ul>
+            <li class="active" data-filter=".api">API</li>
+            <li data-filter=".vue">Vue</li>
+            <li data-filter=".wordpress">WordPress</li>
+          </ul>
+        </div>
 
-          <div class="card">
-            <div class="face face1">
-              <div class="content">
-                <img loading="lazy" src="img/code.webp" alt="code">
-                <h3>Novos Talentos</h3>
-              </div>
-            </div>
-            <div class="face face2">
-              <div class="content">
-                <p>O programa Novos Talentos  é uma excelente oportunidade de renovação para a estrutura interna de pessoas e do desenvolvimento de jovens profissionais.
-                </p>
-                <a class="btn-skew" href="https://novostalentos.cadmus.com.br" target="_blank">Ver projeto</a>
+        <div id="mobile" class="slider">
+          <div class="slide api">
+            <div class="flip-card-mobile">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img loading="lazy" src="img/code.webp" alt="code">
+                  <h3>Movicode</h3>
+                  <a href="https://moviecode.vercel.app/" target="_blank">Ver projeto</a>
+                </div>
               </div>
             </div>
           </div>
-       
+          <div class="slide api">
+            <div class="flip-card-mobile">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img loading="lazy" src="img/code.webp" alt="code">
+                  <h3>Restcountries</h3>
+                  <a href="https://danielcrubens.github.io/country-api" target="_blank">Ver projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide api">
+            <div class="flip-card-mobile">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img loading="lazy" src="img/code.webp" alt="code">
+                  <h3>Devfinder</h3>
+                  <a href="https://gituser-api.vercel.app/" target="_blank">Ver projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide wordpress">
+            <div class="flip-card-mobile">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img loading="lazy" src="img/code.webp" alt="code">
+                  <h3>Liga Ágil </h3>
+                  <a href="https://ligaagil.com.br" target="_blank">Ver projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide wordpress">
+            <div class="flip-card-mobile">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img loading="lazy" src="img/code.webp" alt="code">
+                  <h3>Cadmus </h3>
+                  <a href="https://cadmus.com.br" target="_blank">Ver projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide wordpress">
+            <div class="flip-card-mobile">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img loading="lazy" src="img/code.webp" alt="code">
+                  <h3>Cadmus Play </h3>
+                  <a href="https://cadmusplay.com" target="_blank">Ver projeto</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+  
+        
+
+        <div class="portfolio-menu">
+          <ul>
+            <li class="active" data-filter=".api">API</li>
+            <li data-filter=".vue">Vue</li>
+            <li data-filter=".wordpress">WordPress</li>
+          </ul>
+        </div>
+        <div class="portfolio-item ">
+          <div class="grid-container">
+            <div class="grid-item item api">
+              <div class="teste ">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img loading="lazy" src="img/code.webp" alt="code">
+                      <h3>Restcountries </h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Obtendo dados do país via API Restcountries e imagem correspondente via API Unsplash</p>
+                      <a href="https://danielcrubens.github.io/country-api" target="_blank">Ver projeto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="teste ">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img loading="lazy" src="img/code.webp" alt="code">
+                      <h3>Devfinder</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Consumir a API de usuários do GitHub para extrair dados de perfil e exibi-los</p>
+                      <a href="https://gituser-api.vercel.app/" target="_blank">Ver projeto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="teste ">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img loading="lazy" src="img/code.webp" alt="code">
+                      <h3>Movicode</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Consumindo a API de filmes do 'The Movie DataBase' e criando uma página HTML de exibição</p>
+                      <a href="https://moviecode.vercel.app/" target="_blank">Ver projeto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item item vue">
+              <div class="teste ">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img loading="lazy" src="img/code.webp" alt="code">
+                      <h3>Restcountries </h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Obtendo dados do país via API Restcountries e imagem correspondente via API Unsplash</p>
+                      <a href="https://danielcrubens.github.io/country-api" target="_blank">Ver projeto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item item wordpress">
+              <div class="teste ">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img loading="lazy" src="img/code.webp" alt="code">
+                      <h3>Liga Ágil </h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Site institucional, oferece suporte e treinamentos em metodologias ágeis para empresas</p>
+                      <a href="https://ligaagil.com.br" target="_blank">Ver projeto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="teste ">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img loading="lazy" src="img/code.webp" alt="code">
+                      <h3>Cadmus</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Site Institucional, soluções em TI, apoiando na consolidação da Cultura Digital</p>
+                      <a href="https://cadmus.com.br" target="_blank">Ver projeto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="teste ">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img loading="lazy" src="img/code.webp" alt="code">
+                      <h3>Cadmus Play</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <p>Site institucional, especializado em facilitar contratações e gestão de profissionais de TI.
+                      </p>
+                      <a href="https://cadmus.com.br" target="_blank">Ver projeto</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -223,7 +305,8 @@
                 <span></span>
                 <span class="fab fa-linkedin-in"></span>
               </div>
-              <a href="https://wa.me/5515996561043?text=Olá Daniel.%20Eu vi o seu portifólio,%20e quero saber mais sobre seus projetos." aria-label="Whatsapp"target="blank">
+              <a href="https://wa.me/5515996561043?text=Olá Daniel.%20Eu vi o seu portifólio,%20e quero saber mais sobre seus projetos."
+                aria-label="Whatsapp" target="blank">
                 <div class="layer">
                   <span></span>
                   <span></span>
@@ -236,9 +319,9 @@
       </div>
     </section>
   </main>
-
   <script src="js/jquery.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+  <script src="js/isotope.js"></script>
   <script src="js/main.js"></script>
 </body>
 

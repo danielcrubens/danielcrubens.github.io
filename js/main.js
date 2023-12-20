@@ -33,6 +33,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+$(document).ready(function(){
+  $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: false,
+    dots: true,
+    arrows: true,
+  });
+
+  $('.filter-mobile ul li').on('click', function() {
+    $('.filter-mobile ul li').removeClass('active');
+    $(this).addClass('active');
+
+    var filter = $(this).attr('data-filter');
+    if (filter === '.api' || filter === '.vue' || filter === '.wordpress') {
+      $('.slider').slick('slickUnfilter');
+      $('.slider').slick('slickFilter', filter);
+    } else {
+      $('.slider').slick('slickUnfilter');
+    }
+  });
+});
+
   const grid = document.querySelector('.portfolio-item');
   const items = grid.querySelectorAll('.item');
   const portfolioMenuItems = document.querySelectorAll('.portfolio-menu ul li');
@@ -60,6 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+ 
 
 
 
