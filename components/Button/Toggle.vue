@@ -1,5 +1,5 @@
 <template>
-  <button aria-label="Toggle menu" @click="toggleNav" class="menu-button absolute right-14 h-10 top-8">
+  <button aria-label="Toggle menu" @click="toggleNav" class="menu-button absolute right-3 xl:right-14 h-10 top-3 xl:top-8">
     <div class="relative">
       <Transition name="fade" mode="out-in">
         <svg v-if="!isOpen" key="menu-icon" class="h-8 w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
