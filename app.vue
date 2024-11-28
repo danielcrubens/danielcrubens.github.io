@@ -1,6 +1,17 @@
 <template>
   <div>
-    <img src="/v2osk-1Z2niiBPg5A-unsplash.jpg" loading="lazy">
-    <img src="/qingbao-meng-01_igFr7hd4-unsplash.jpg" loading="lazy">
+    <NuxtPage />
   </div>
 </template>
+<script setup lang="ts">
+useHead({
+  title: 'Portfólio | Daniel Costa Rubens',
+})
+
+useSeoMeta({
+  title: 'Portfólio | Daniel Costa Rubens',
+  ogTitle: 'Portfólio | Daniel Costa Rubens',
+  description: 'Meus projetos desenvolvidos durante a minha carreira como desenvolvedor Front-end',
+  ogDescription: 'Meus projetos desenvolvidos durante a minha carreira como desenvolvedor Front-end',
+})
+</script>

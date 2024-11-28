@@ -11,9 +11,25 @@
     "deploy": "gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/seo": "^2.0.2",
+    "@nuxtjs/tailwindcss": "^6.12.2",
+    "@vueuse/core": "^11.3.0",
+    "@vueuse/motion": "^2.2.6",
     "gh-pages": "^6.2.0",
     "nuxt": "^3.14.1592",
+    "nuxt-og-image": "^4.0.0",
+    "nuxt-swiper": "^2.0.0",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue-slick-carousel": "^1.0.6"
+  },
+  "devDependencies": {
+    "@inspira-ui/plugins": "^0.0.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
+    "tailwind-merge": "^2.5.5"
   }
 }
