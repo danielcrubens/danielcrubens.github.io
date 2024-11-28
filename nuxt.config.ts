@@ -31,10 +31,8 @@ export default defineNuxtConfig({
   },
   ogImage: {
     fonts: ['Geist Mono:400', 'Geist Mono:500', 'Geist Mono:700'],
-    siteUrl: process.env.SITE_URL,
-    runtimeCaching: true,
   },
   site: {
-    url: process.env.SITE_URL,
+    url: 'https://danielcrubens.github.io/',
   },
 })

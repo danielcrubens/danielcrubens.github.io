@@ -45,4 +45,11 @@ function showSection(index) {
   activeSection.value = index;
   isOpen.value = false;
 }
+defineOgImage({
+  component: 'Main',
+  props: {
+    title: 'Portfólio | Daniel Costa Rubens',
+    description: 'Meus projetos desenvolvidos durante a minha carreira como desenvolvedor Front-end',
+  },
+})
 </script>

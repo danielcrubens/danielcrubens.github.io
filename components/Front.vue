@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center h-screen flex-col">
+  <div class="flex items-center justify-center h-screen flex-col px-3 md:px-auto">
     <Transition name="fade-blur-up" mode="out-in">
       <h1 v-if="!isOpen && showFirstText" key="firstText" class="text-2xl md:text-4xl xl:text-5xl text-center font-bold text-white">
         Entusiasta por tecnologias front-end
