@@ -1,6 +1,6 @@
 <template>
   <ClientOnly>
-    <div class="border-card" @mouseenter="isFlipped = true" @mouseleave="isFlipped = false">
+    <div class="border-card" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @touchstart="onTouchStart">
       <BorderBeam :size="405" :duration="20" :delay="10" :border-width="1" />
       <div class="card">
         <div class="card-wrapper">
@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import BorderBeam from '@/components/InspiraUi/BorderBeam.vue'
 import Computer from '@/components/Skills/Computer.vue'
 const props = defineProps({
@@ -42,6 +42,38 @@ const props = defineProps({
 })
 
 const isFlipped = ref(false)
+const isMobile = ref(false)
+
+const checkMobile = () => {
+  isMobile.value = window.innerWidth <= 768 
+}
+
+const onMouseEnter = () => {
+  if (!isMobile.value) {
+    isFlipped.value = true
+  }
+}
+
+const onMouseLeave = () => {
+  if (!isMobile.value) {
+    isFlipped.value = false
+  }
+}
+
+const onTouchStart = () => {
+  if (isMobile.value) {
+    isFlipped.value = !isFlipped.value
+  }
+}
+
+onMounted(() => {
+  checkMobile()
+  window.addEventListener('resize', checkMobile)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile)
+})
 </script>
 
 <style scoped lang="scss">
@@ -84,23 +116,21 @@ const isFlipped = ref(false)
           @apply text-white font-medium text-center md:text-base;
         }
       }
-      }
-
-      .link {
-        @apply outline-none relative inline-block;
-
-        span:first-child {
-          @apply absolute inset-0 bg-[#9c40ff];
-        }
-
-        span:last-child {
-          @apply relative inline-block border-2 border-current px-8 py-3 tracking-widest text-wrap;
-        }
-      }
     }
 
-  }
+    .link {
+      @apply outline-none relative inline-block;
 
+      span:first-child {
+        @apply absolute inset-0 bg-[#9c40ff];
+      }
+
+      span:last-child {
+        @apply relative inline-block border-2 border-current px-8 py-3 tracking-widest text-wrap;
+      }
+    }
+  }
+}
 
 .perspective-1000 {
   perspective: 1000px;
