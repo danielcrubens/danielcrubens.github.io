@@ -24,7 +24,7 @@
         </div>
       </NuxtLink>
       <NuxtLink
-        href="https://wa.me/5515996561043?text=Olá Daniel.%20Eu vi o seu portifólio,%20e quero saber mais sobre seus projetos."
+        href="https://wa.me/5515996561043?text=Olá, Daniel.%20Eu vi o seu portifólio,%20e quero saber mais sobre seus projetos."
         aria-label="Whatsapp" target="blank">
         <div class="layer">
           <span></span>
