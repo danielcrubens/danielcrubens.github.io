@@ -2,7 +2,7 @@
   <section class="flex items-center justify-center h-screen">
     <Transition name="fade-blur-up" mode="out-in">
     <div v-if="!isOpen" class="md:w-10/12 w-11/12">
-      <Navigation :categories="['api', 'vue', 'wordpress']" :selected="selectedContent"
+      <Navigation :categories="[/*'api',*/ 'vue', 'wordpress']" :selected="selectedContent"
         @update:selected="(newCategory) => (selectedContent = newCategory)" />
         <Transition name="zoom" mode="out-in">
         <Grid :key="selectedContent" :selected-content="selectedContent" />
@@ -50,5 +50,5 @@ import { ref } from 'vue'
 import Navigation from "@/components/Projects/Navigation.vue";
 import Grid from "@/components/Projects/Grid.vue";
 
-const selectedContent = ref('api');
+const selectedContent = ref('vue');
 </script>

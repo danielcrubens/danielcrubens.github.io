@@ -51,7 +51,7 @@ const onSlideChange = () => {
 const SwiperPagination = Pagination;
 const SwiperNavigation = Navigation;
 const SwiperAutoplay = Autoplay;
-const apiProjects = [
+/* const apiProjects = [
   {
     title: 'Restcountries',
     description: 'Obtendo dados do país via API Restcountries e imagem correspondente via API Unsplash',
@@ -67,18 +67,18 @@ const apiProjects = [
     description: 'Acesso a visualização das informações de veículos da tabela FIPE através de sua API',
     link: 'https://fipe-vue.netlify.app/'
   }
-];
+]; */
 
 const vueProjects = [
+   {
+    title: 'Simeagro',
+    description: 'Plataforma de monitoramento agrícola por satélite e inteligência climática para cooperativas',
+    link: 'https://simeagro.com.br/'
+  },
   {
     title: 'Planner',
     description: 'Aplicação voltada para montar planos de viagem com amigos',
     link: 'https://planner-vue.vercel.app/'
-  },
-  {
-    title: 'Nuxt.Q',
-    description: 'Plataforma para perguntas anônimas, com sala gerenciada por senha',
-    link: 'https://nuxtq.netlify.app/'
   },
   {
     title: 'In.Orbit',
@@ -88,15 +88,15 @@ const vueProjects = [
 ];
 
 const wordpressProjects = [
+   {
+    title: 'Cadmus',
+    description: 'Site Institucional, soluções em TI, apoiando na consolidação da Cultura Digital',
+    link: 'https://cadmus.com.br/'
+  },
   {
     title: 'BeeforPlay',
     description: 'Site institucional, especializado em oferecer soluções para gestão de pessoas e equipes',
     link: 'https://play.beefor.io/'
-  },
-  {
-    title: 'Cadmus',
-    description: 'Site Institucional, soluções em TI, apoiando na consolidação da Cultura Digital',
-    link: 'https://cadmus.com.br/'
   },
   {
     title: 'CadmusPlay',
@@ -106,12 +106,12 @@ const wordpressProjects = [
 ];
 
 const projectsMapping = {
-  api: apiProjects,
+  /* api: apiProjects, */
   vue: vueProjects,
   wordpress: wordpressProjects,
 };
 
-const currentProjects = computed(() => projectsMapping[props.selectedContent] || apiProjects);
+const currentProjects = computed(() => projectsMapping[props.selectedContent] || vueProjects);
 
 
 </script>
