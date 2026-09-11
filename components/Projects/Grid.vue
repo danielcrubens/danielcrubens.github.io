@@ -76,15 +76,15 @@ const vueProjects = [
     link: 'https://simeagro.com.br/'
   },
   {
+    title: 'FaleiePronto',
+    description: 'Controle de gastos por voz',
+    link: 'https://faleiepronto.com.br/'
+  },
+  {
     title: 'Planner',
     description: 'Aplicação voltada para montar planos de viagem com amigos',
     link: 'https://planner-vue.vercel.app/'
-  },
-  {
-    title: 'In.Orbit',
-    description: 'Gerenciador de metas pessoais',
-    link: 'https://in-orbit-vue.vercel.app/'
-  }
+  }  
 ];
 
 const wordpressProjects = [
