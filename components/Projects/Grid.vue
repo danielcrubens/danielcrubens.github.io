@@ -83,7 +83,7 @@ const vueProjects = [
   {
     title: 'Planner',
     description: 'Aplicação voltada para montar planos de viagem com amigos',
-    link: 'https://planner-vue.vercel.app/'
+    link: 'https://planner-vue.netlify.app/'
   }  
 ];
 
